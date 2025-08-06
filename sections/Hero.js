@@ -27,13 +27,13 @@ const Hero = () => {
           ]}
         >
           <CarouselContent>
-            <CarouselItem>
+            <CarouselItem >
               <Image
                 width={500}
                 height={500}
                 src="/hero.png"
                 alt="Traditional Mandi dish with spiced lamb and saffron rice"
-                className="w-full h-full object-cover"
+                className="w-full h-[100vh] object-cover"
               />
             </CarouselItem>
             <CarouselItem>
@@ -42,7 +42,7 @@ const Hero = () => {
                 height={500}
                 src="/restaurant-interior.jpg"
                 alt="Restaurant Interior"
-                className="w-full h-full object-cover"
+                className="w-full h-[100vh] object-cover"
               />
             </CarouselItem>
             <CarouselItem>
@@ -51,12 +51,12 @@ const Hero = () => {
                 height={500}
                 src="/menu-spread.jpg"
                 alt="Menu Spread"
-                className="w-full h-full object-cover"
+                className="w-full h-[100vh] object-cover"
               />
             </CarouselItem>
           </CarouselContent>
-          <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-20" />
-          <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-20" />
+          <CarouselPrevious  className="absolute left-4 top-1/2 -translate-y-1/2 z-20 hidden md:visible" />
+          <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-20 hidden lg:visible" />
         </Carousel>
         <div className="absolute inset-0 bg-black/50"></div>
       </div>
@@ -70,8 +70,7 @@ const Hero = () => {
         </h1>
         <p className="text-xl md:text-2xl font-inter font-light max-w-2xl mx-auto leading-relaxed mt-4">
           Indulge in traditional Middle Eastern cuisine crafted with passion and
-          served with pride. From aromatic spices to tender meats, every bite
-          tells a story of culinary excellence.
+          served with pride.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
           <Button

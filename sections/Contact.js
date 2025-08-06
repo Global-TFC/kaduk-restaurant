@@ -7,7 +7,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Visit Us",
-      details: ["Multiple Locations", "Kerala, India"]
+      details: ["Thiruvambady", "Mukkam, Kozhikode"]
     },
     {
       icon: Phone,
@@ -15,14 +15,9 @@ const Contact = () => {
       details: ["+91 123 456 7890", "+91 098 765 4321"]
     },
     {
-      icon: Mail,
-      title: "Email Us",
-      details: ["info@kadukrestaurant.com", "reservations@kadukrestaurant.com"]
-    },
-    {
       icon: Clock,
       title: "Opening Hours",
-      details: ["Mon - Sun: 11:00 AM - 11:00 PM", "Holidays: 12:00 PM - 10:00 PM"]
+      details: ["Mon - Sun: 9:00 AM - 11:00 PM"]
     }
   ];
 

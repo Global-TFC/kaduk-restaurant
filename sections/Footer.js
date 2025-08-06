@@ -11,9 +11,9 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
-              <img 
-                src="/kaduk.png" 
-                alt="Kaduk Restaurant Logo" 
+              <img
+                src="/kaduk.png"
+                alt="Kaduk Restaurant Logo"
                 className="h-8 w-8"
               />
               <h3 className="text-2xl font-playfair font-bold text-gold">
@@ -21,8 +21,8 @@ const Footer = () => {
               </h3>
             </div>
             <p className="text-sm font-inter opacity-90">
-              Authentic family recipes and exceptional dining experiences. 
-              Where tradition meets taste in every dish we serve.
+              Authentic family recipes and exceptional dining experiences. Where
+              tradition meets taste in every dish we serve.
             </p>
           </div>
           {/* Quick Links */}
@@ -31,11 +31,34 @@ const Footer = () => {
               Quick Links
             </h4>
             <ul className="space-y-2 text-sm font-inter">
-              <li><a href="#home" className="hover:text-gold transition-colors">Home</a></li>
-              <li><a href="#about" className="hover:text-gold transition-colors">About</a></li>
-              <li><a href="#menu" className="hover:text-gold transition-colors">Menu</a></li>
-              <li><a href="#awards" className="hover:text-gold transition-colors">Awards</a></li>
-              <li><a href="#contact" className="hover:text-gold transition-colors">Contact</a></li>
+              <li>
+                <a href="#home" className="hover:text-gold transition-colors">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#about" className="hover:text-gold transition-colors">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#menu" className="hover:text-gold transition-colors">
+                  Menu
+                </a>
+              </li>
+              <li>
+                <a href="#awards" className="hover:text-gold transition-colors">
+                  Awards
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  className="hover:text-gold transition-colors"
+                >
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
           {/* Services */}
@@ -44,11 +67,31 @@ const Footer = () => {
               Services
             </h4>
             <ul className="space-y-2 text-sm font-inter">
-              <li><a href="#" className="hover:text-gold transition-colors">Dine In</a></li>
-              <li><a href="#" className="hover:text-gold transition-colors">Takeaway</a></li>
-              <li><a href="#" className="hover:text-gold transition-colors">Online Order</a></li>
-              <li><a href="#" className="hover:text-gold transition-colors">Catering</a></li>
-              <li><a href="#" className="hover:text-gold transition-colors">Events</a></li>
+              <li>
+                <a href="#" className="hover:text-gold transition-colors">
+                  Dine In
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-gold transition-colors">
+                  Takeaway
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-gold transition-colors">
+                  Online Order
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-gold transition-colors">
+                  Catering
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-gold transition-colors">
+                  Events
+                </a>
+              </li>
             </ul>
           </div>
           {/* Contact Info */}
@@ -57,22 +100,41 @@ const Footer = () => {
               Get in Touch
             </h4>
             <div className="space-y-2 text-sm font-inter">
-              <p>123 Arabian Street, Food District</p>
+              <p>
+                Y Bridge Thiruvambady Road Kumaranallur,Kozhikode 
+              </p>
               <p>Phone: +91 123 456 7890</p>
               <p>Email: info@kadukrestaurant.com</p>
-              <p>Hours: 11 AM - 11 PM Daily</p>
+              <p>Hours: 9 AM - 11 PM Daily</p>
             </div>
             {/* Social Media Links */}
             <div className="pt-4">
-              <h5 className="text-sm font-semibold text-gold mb-3">Follow Us</h5>
+              <h5 className="text-sm font-semibold text-gold mb-3">
+                Follow Us
+              </h5>
               <div className="flex space-x-4">
-                <a href="https://instagram.com/kadukrestaurant" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <a
+                  href="https://instagram.com/kadukrestaurant"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
                   <FaInstagram className="w-6 h-6 text-gold hover:text-cream transition-colors" />
                 </a>
-                <a href="https://facebook.com/kadukrestaurant" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <a
+                  href="https://facebook.com/kadukrestaurant"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
                   <FaFacebook className="w-6 h-6 text-gold hover:text-cream transition-colors" />
                 </a>
-                <a href="https://wa.me/911234567890" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                <a
+                  href="https://wa.me/911234567890"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
+                >
                   <FaWhatsapp className="w-6 h-6 text-gold hover:text-cream transition-colors" />
                 </a>
               </div>
@@ -83,9 +145,15 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center text-sm font-inter opacity-75">
           <p>&copy; 2025 Kaduk Restaurant. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="hover:text-gold transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-gold transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-gold transition-colors">Feedback</a>
+            <a href="#" className="hover:text-gold transition-colors">
+              Privacy Policy
+            </a>
+            <a href="#" className="hover:text-gold transition-colors">
+              Terms of Service
+            </a>
+            <a href="#" className="hover:text-gold transition-colors">
+              Feedback
+            </a>
           </div>
         </div>
       </div>
