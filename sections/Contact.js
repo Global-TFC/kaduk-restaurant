@@ -7,7 +7,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Visit Us",
-      details: ["Thiruvambady", "Mukkam, Kozhikode"]
+      details: ["Thiruvambady Road Kumaranallur","Mukkam,Kozhikode"]
     },
     {
       icon: Phone,

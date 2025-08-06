@@ -14,7 +14,7 @@ const Header = () => {
           <div className="flex items-center">
             <img 
               src="/kaduk.png" 
-              alt="Kaduk Restaurant Logo" 
+              alt="Kaduk Restaurant mukkam" 
               className="h-12 w-12"
             />
             <h1 className="ml-3 text-2xl font-playfair font-bold text-white">
@@ -41,9 +41,11 @@ const Header = () => {
           </nav>
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
+            <a href="https://maps.app.goo.gl/5DxsRH1ryPAP4UGW8" target="_blank">
             <Button className="border-white  hover:bg-white hover:text-primary transition-all duration-300 hover:scale-105">
               Map
             </Button>
+            </a>
           </div>
           {/* Mobile Menu Button */}
           <button

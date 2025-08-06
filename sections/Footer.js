@@ -25,41 +25,35 @@ const Footer = () => {
               tradition meets taste in every dish we serve.
             </p>
           </div>
-          {/* Quick Links */}
-          <div className="space-y-4">
-            <h4 className="text-lg font-playfair font-semibold text-gold">
-              Quick Links
-            </h4>
-            <ul className="space-y-2 text-sm font-inter">
-              <li>
-                <a href="#home" className="hover:text-gold transition-colors">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#about" className="hover:text-gold transition-colors">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#menu" className="hover:text-gold transition-colors">
-                  Menu
-                </a>
-              </li>
-              <li>
-                <a href="#awards" className="hover:text-gold transition-colors">
-                  Awards
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  className="hover:text-gold transition-colors"
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
+          {/* Social Media Links */}
+          <div className="pt-4">
+            <h5 className="text-sm font-semibold text-gold mb-3">Follow Us</h5>
+            <div className="flex space-x-4">
+              <a
+                href="https://instagram.com/kadukrestaurant"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <FaInstagram className="w-6 h-6 text-gold hover:text-cream transition-colors" />
+              </a>
+              <a
+                href="https://facebook.com/kadukrestaurant"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <FaFacebook className="w-6 h-6 text-gold hover:text-cream transition-colors" />
+              </a>
+              <a
+                href="https://wa.me/911234567890"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+              >
+                <FaWhatsapp className="w-6 h-6 text-gold hover:text-cream transition-colors" />
+              </a>
+            </div>
           </div>
           {/* Services */}
           <div className="space-y-4">
@@ -100,44 +94,10 @@ const Footer = () => {
               Get in Touch
             </h4>
             <div className="space-y-2 text-sm font-inter">
-              <p>
-                Y Bridge Thiruvambady Road Kumaranallur,Kozhikode 
-              </p>
+              <p>Y Bridge Thiruvambady Road Kumaranallur,Kozhikode </p>
               <p>Phone: +91 123 456 7890</p>
               <p>Email: info@kadukrestaurant.com</p>
               <p>Hours: 9 AM - 11 PM Daily</p>
-            </div>
-            {/* Social Media Links */}
-            <div className="pt-4">
-              <h5 className="text-sm font-semibold text-gold mb-3">
-                Follow Us
-              </h5>
-              <div className="flex space-x-4">
-                <a
-                  href="https://instagram.com/kadukrestaurant"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Instagram"
-                >
-                  <FaInstagram className="w-6 h-6 text-gold hover:text-cream transition-colors" />
-                </a>
-                <a
-                  href="https://facebook.com/kadukrestaurant"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Facebook"
-                >
-                  <FaFacebook className="w-6 h-6 text-gold hover:text-cream transition-colors" />
-                </a>
-                <a
-                  href="https://wa.me/911234567890"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="WhatsApp"
-                >
-                  <FaWhatsapp className="w-6 h-6 text-gold hover:text-cream transition-colors" />
-                </a>
-              </div>
             </div>
           </div>
         </div>
