@@ -17,7 +17,7 @@ const Footer = () => {
                 className="h-8 w-8"
               />
               <h3 className="text-2xl font-playfair font-bold text-gold">
-                Kaduk Restaurant
+                Kaduk Restaurant Mukkam
               </h3>
             </div>
             <p className="text-sm font-inter opacity-90">
@@ -94,7 +94,7 @@ const Footer = () => {
               Get in Touch
             </h4>
             <div className="space-y-2 text-sm font-inter">
-              <p>Y Bridge Thiruvambady Road Kumaranallur,Kozhikode </p>
+              <p>Y Bridge Thiruvambady Road Kumaranallur, Mukkam, Kozhikode </p>
               <p>Phone: +91 123 456 7890</p>
               <p>Email: info@kadukrestaurant.com</p>
               <p>Hours: 9 AM - 11 PM Daily</p>

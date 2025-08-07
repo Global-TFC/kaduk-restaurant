@@ -27,7 +27,16 @@ const Hero = () => {
           ]}
         >
           <CarouselContent>
-            <CarouselItem >
+            <CarouselItem>
+              <Image
+                width={500}
+                height={500}
+                src="/ramadanfood.jpg"
+                alt="Restaurant Interior"
+                className="w-full h-[100vh] object-cover"
+              />
+            </CarouselItem>
+            <CarouselItem>
               <Image
                 width={500}
                 height={500}
@@ -40,11 +49,12 @@ const Hero = () => {
               <Image
                 width={500}
                 height={500}
-                src="/restaurant-interior.jpg"
+                src="/kalpa.jpg"
                 alt="Restaurant Interior"
                 className="w-full h-[100vh] object-cover"
               />
             </CarouselItem>
+
             <CarouselItem>
               <Image
                 width={500}
@@ -55,7 +65,7 @@ const Hero = () => {
               />
             </CarouselItem>
           </CarouselContent>
-          <CarouselPrevious  className="absolute left-4 top-1/2 -translate-y-1/2 z-20 hidden md:visible" />
+          <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-20 hidden md:visible" />
           <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-20 hidden lg:visible" />
         </Carousel>
         <div className="absolute inset-0 bg-black/50"></div>
