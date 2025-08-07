@@ -31,7 +31,7 @@ const About = () => {
             <div className="grid sm:grid-cols-2 gap-4 pt-6">
               <Card className="bg-card/50 border-border shadow-warm">
                 <CardContent className="p-6 text-center">
-                  <div className="text-3xl font-bold text-primary font-playfair">100+</div>
+                  <div className="text-3xl font-bold text-primary font-playfair">50+</div>
                   <div className="text-sm text-muted-foreground font-inter">Family Recipes</div>
                 </CardContent>
               </Card>

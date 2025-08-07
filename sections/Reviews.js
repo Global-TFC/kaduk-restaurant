@@ -5,35 +5,35 @@ const Reviews = () => {
   const customerReviews = [
     {
       icon: Star,
-      name: "Sarah Johnson",
+      name: "Dev Krishna",
       review:
-        "Amazing authentic flavors! The family recipes truly shine through every dish. Best restaurant experience in town.",
+        "It was a great experience... Good foods and good service...Comparatively cheaper than other restaurants...Family atmosphere and good ambience too...",
       rating: 5,
       location: "Local Food Critic",
     },
     {
       icon: Quote,
-      name: "Michael Chen",
+      name: "Riswana Haneefa",
       review:
-        "Kaduk Restaurant feels like home. The warm atmosphere and incredible food make it our family's favorite dining spot.",
+        "It was a good place for veriity chicken dishes.. And delicious food... Jst try it..",
       rating: 5,
       location: "Regular Customer",
     },
     {
       icon: Star,
-      name: "Emily Rodriguez",
+      name: "Ali Juraiz O",
       review:
-        "Outstanding service and the most delicious traditional cuisine. Every visit is a culinary journey worth taking.",
-      rating: 5,
+        "Great place for mandi, kanthari alfahm and beef usmania. Recommended dishes Chicken Pollichad, Kathari Chicken and Porotta",
+      rating: 4,
       location: "Food Enthusiast",
     },
     {
       icon: Quote,
-      name: "David Thompson",
+      name: "Risvana Padinharayil",
       review:
-        "Five generations of recipes come alive in every bite. Kaduk Restaurant preserves tradition while creating new memories.",
+        "Good place for who searching variety and delicious foods.must try atleast once, you will be adicted to it.",
       rating: 5,
-      location: "Heritage Food Lover",
+      location: "Regular Customer",
     },
   ];
 
@@ -81,7 +81,7 @@ const Reviews = () => {
                     <h4 className="text-sm font-playfair font-semibold text-foreground">
                       {review.name}
                     </h4>
-                    <p className="text-xs text-accent font-inter">
+                    <p className="text-xs text-gray-500 font-inter">
                       {review.location}
                     </p>
                   </div>
@@ -105,7 +105,7 @@ const Reviews = () => {
                   dish tells a story, every meal brings families closer
                   together."
                 </p>
-                <p className="text-sm opacity-75 font-inter">
+                <p className="text-sm opacity-85 font-inter">
                   - The Kaduk Family Legacy
                 </p>
               </div>

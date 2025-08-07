@@ -78,11 +78,6 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#" className="hover:text-gold transition-colors">
-                  Catering
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-gold transition-colors">
                   Events
                 </a>
               </li>
@@ -96,7 +91,7 @@ const Footer = () => {
             <div className="space-y-2 text-sm font-inter">
               <p>Y Bridge Thiruvambady Road Kumaranallur, Mukkam, Kozhikode </p>
               <p>Phone: +91 123 456 7890</p>
-              <p>Email: info@kadukrestaurant.com</p>
+              <p>Email: kadukrestaurantmukkam@gmail.com</p>
               <p>Hours: 9 AM - 11 PM Daily</p>
             </div>
           </div>

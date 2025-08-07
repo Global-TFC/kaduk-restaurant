@@ -7,7 +7,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Visit Us",
-      details: ["Thiruvambady Road Kumaranallur","Mukkam,Kozhikode"]
+      details: ["Y Bridge Thiruvambady Road Kumaranallur","Mukkam,Kozhikode"]
     },
     {
       icon: Phone,
