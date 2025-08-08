@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Button } from "../components/ui/button";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,9 +30,9 @@ const Header = () => {
             <a href="#about" className="text-white hover:text-primary transition-all duration-300 hover:scale-105">
               About
             </a>
-            <a href="#menu" className="text-white hover:text-primary transition-all duration-300 hover:scale-105">
+            <Link href={"/menu"} className="text-white hover:text-primary transition-all duration-300 hover:scale-105">
               Menu
-            </a>
+            </Link>
             <a href="#reviews" className="text-white hover:text-primary transition-all duration-300 hover:scale-105">
               Reviews
             </a>

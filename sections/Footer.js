@@ -30,7 +30,7 @@ const Footer = () => {
             <h5 className="text-sm font-semibold text-gold mb-3">Follow Us</h5>
             <div className="flex space-x-4">
               <a
-                href="https://instagram.com/kadukrestaurant"
+                href="https://www.instagram.com/amwajkerala"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -38,7 +38,7 @@ const Footer = () => {
                 <FaInstagram className="w-6 h-6 text-gold hover:text-cream transition-colors" />
               </a>
               <a
-                href="https://facebook.com/kadukrestaurant"
+                href="/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -69,6 +69,11 @@ const Footer = () => {
               <li>
                 <a href="#" className="hover:text-gold transition-colors">
                   Takeaway
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-gold transition-colors">
+                  Catering
                 </a>
               </li>
               <li>

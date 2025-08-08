@@ -90,6 +90,17 @@ const Reviews = () => {
             </Card>
           ))}
         </div>
+        {/* Add Review Button */}
+        <div className="flex justify-center mt-10">
+          <a
+            href="https://www.google.com/search?q=kaduk+restaurant+mukkam+reviews"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-primary text-primary-foreground font-semibold px-8 py-3 rounded-lg shadow-glow hover:bg-primary/90 transition-colors text-lg"
+          >
+            Add Your Review on Google
+          </a>
+        </div>
         {/* Customer Testimonial Banner */}
         <div className="mt-16 text-center animate-fade-in">
           <Card className="bg-primary text-primary-foreground shadow-glow max-w-4xl mx-auto hover:scale-105 transition-transform duration-300">
