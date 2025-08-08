@@ -14,7 +14,7 @@ const Footer = () => {
               <img
                 src="/kaduk.png"
                 alt="Kaduk Restaurant Logo"
-                className="h-8 w-8"
+                className="w-24 h-12 sm:w-28 sm:h-16 md:w-32 md:h-20 lg:w-40 lg:h-24 object-contain"
               />
               <h3 className="text-2xl font-playfair font-bold text-gold">
                 Kaduk Restaurant Mukkam

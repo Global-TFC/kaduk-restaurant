@@ -13,7 +13,8 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Kaduk Restaurant Mukkam",
-  description: "Experience the authentic flavors of Arabia at Kaduk Restaurant in Mukkam.",
+  description:
+    "Experience the authentic flavors of Arabia at Kaduk Restaurant in Mukkam.",
 };
 
 export default function RootLayout({ children }) {

@@ -79,8 +79,7 @@ const Hero = () => {
           </span>
         </h1>
         <p className="text-xl md:text-2xl font-inter font-light max-w-2xl mx-auto leading-relaxed mt-4">
-          Indulge in traditional Middle Eastern cuisine crafted with passion and
-          served with pride.
+            Discover the Best Middle Eastern and Kerala flavors in Kozhikode.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
           <Button
@@ -92,7 +91,7 @@ const Hero = () => {
         </div>
         <div className="flex items-center justify-center space-x-8 mt-8 text-gold">
           <div className="text-center">
-            <div className="text-2xl font-bold">15+</div>
+            <div className="text-2xl font-bold">8+</div>
             <div className="text-sm">Years of Excellence</div>
           </div>
           <div className="text-center">

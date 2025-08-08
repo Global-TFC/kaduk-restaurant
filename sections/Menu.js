@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const Menu = () => {
@@ -44,11 +45,7 @@ const Menu = () => {
   return (
     <div className="min-h-screen bg-yellow-100 py-8 px-4 md:px-16 font-sans text-gray-800">
       <div className="text-center mb-10">
-        <Link href={"/"}>
-          <h1 className="text-5xl font-bold mb-4 drop-shadow-md">
-            Kaduk Restaurant
-          </h1>
-        </Link>
+        <Image src={"/kaduk.png"} alt="Kaduk Restaurant Logo" width={200} height={100} className="mx-auto mb-4" />
 
         <p className="text-lg text-gray-600 font-medium">
           Authentic Flavors | Y Bridge Thiruvambady Road Kumaranallur, Mukkam - Kozhikkode
