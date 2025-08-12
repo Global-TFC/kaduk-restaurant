@@ -12,7 +12,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center fixed top-1">
             <img
               src="/kaduk.png"
               alt="Kaduk Restaurant mukkam"
@@ -65,7 +65,7 @@ const Header = () => {
           </div> */}
           {/* Mobile Menu Button */}
           <button
-            className="block md:hidden p-2 z-[100] fixed top-6 right-6"
+            className="block md:hidden p-2 z-[100] fixed top-7 right-6"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
           >
