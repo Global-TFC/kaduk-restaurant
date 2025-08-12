@@ -8,11 +8,11 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="absolute top-0 left-0 right-0 z-50">
-      <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
+    <header className="absolute top-2 left-0 right-0 z-50">
           {/* Logo */}
-          <div className="flex items-center fixed top-1">
+      <div className="container mx-auto  px-4 py-4 flex items-center justify-between">
+        {/* Logo (fixed) */}
+        <div className="flex items-center fixed  left-4 z-50 bg-transparent">
             <img
               src="/kaduk.png"
               alt="Kaduk Restaurant mukkam"
@@ -23,7 +23,7 @@ const Header = () => {
             </h1>
           </div>
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden md:flex items-center ml-auto space-x-8 h-full">
             <a
               href="#home"
               className="text-white hover:text-primary-foreground transition-all duration-300 hover:scale-105"
@@ -65,7 +65,7 @@ const Header = () => {
           </div> */}
           {/* Mobile Menu Button */}
           <button
-            className="block md:hidden p-2 z-[100] fixed top-7 right-6"
+            className="block md:hidden p-2 z-[100] fixed top-2 right-6"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
           >
@@ -117,7 +117,6 @@ const Header = () => {
             </div>
           </nav>
         )}
-      </div>
     </header>
   );
 };
