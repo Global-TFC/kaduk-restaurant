@@ -26,31 +26,31 @@ const Header = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <a
               href="#home"
-              className="text-white hover:text-primary transition-all duration-300 hover:scale-105"
+              className="text-white hover:text-primary-foreground transition-all duration-300 hover:scale-105"
             >
               Home
             </a>
             <a
               href="#about"
-              className="text-white hover:text-primary transition-all duration-300 hover:scale-105"
+              className="text-white hover:text-primary-foreground transition-all duration-300 hover:scale-105"
             >
               About
             </a>
             <Link
               href={"/menu"}
-              className="text-white hover:text-primary transition-all duration-300 hover:scale-105"
+              className="text-white hover:text-primary-foreground transition-all duration-300 hover:scale-105"
             >
               Menu
             </Link>
             <a
               href="#reviews"
-              className="text-white hover:text-primary transition-all duration-300 hover:scale-105"
+              className="text-white hover:text-primary-foreground transition-all duration-300 hover:scale-105"
             >
               Reviews
             </a>
             <a
               href="#contact"
-              className="text-white hover:text-primary transition-all duration-300 hover:scale-105"
+              className="text-white hover:text-primary-foreground transition-all duration-300 hover:scale-105"
             >
               Contact
             </a>
@@ -58,7 +58,7 @@ const Header = () => {
           {/* CTA Button */}
           {/* <div className="hidden md:flex items-center space-x-4">
             <a href="https://maps.app.goo.gl/5DxsRH1ryPAP4UGW8" target="_blank">
-            <Button className="border-white  hover:bg-white hover:text-primary transition-all duration-300 hover:scale-105">
+            <Button className="border-white  hover:bg-white hover:text-primary-foreground transition-all duration-300 hover:scale-105">
               Map
             </Button>
             </a>
@@ -82,35 +82,35 @@ const Header = () => {
             <div className="flex flex-col space-y-4 px-4 pt-8">
               <a
                 href="#home"
-                className="text-black hover:text-primary transition-colors animate-fade-in"
+                className="text-black hover:text-primary-foreground transition-colors animate-fade-in"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </a>
               <a
                 href="#about"
-                className="text-black hover:text-primary transition-colors animate-fade-in"
+                className="text-black hover:text-primary-foreground transition-colors animate-fade-in"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
               </a>
               <a
                 href="#menu"
-                className="text-black hover:text-primary transition-colors animate-fade-in"
+                className="text-black hover:text-primary-foreground transition-colors animate-fade-in"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Menu
               </a>
               <a
                 href="#reviews"
-                className="text-black hover:text-primary transition-colors animate-fade-in"
+                className="text-black hover:text-primary-foreground transition-colors animate-fade-in"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Reviews
               </a>
               <Button
                 variant=""
-                className="border-black text-black hover:bg-primary hover:text-white w-full animate-fade-in"
+                className="border-black text-primary-foreground hover:bg-primary hover:text-white w-full animate-fade-in"
               >
                 Contact
               </Button>

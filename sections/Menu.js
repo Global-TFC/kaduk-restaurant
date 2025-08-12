@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { PanelLeftCloseIcon } from "lucide-react";
 
 const Menu = () => {
   const biryanis = [
@@ -44,11 +45,27 @@ const Menu = () => {
 
   return (
     <div className="min-h-screen bg-yellow-100 py-8 px-4 md:px-16 font-sans text-gray-800">
+      {/* Go Home Button */}
+      <div className="flex justify-start">
+        <Link href="/" passHref>
+          <button className="flex items-center gap-2 px-5 py-2 bg-primary text-white rounded-lg shadow hover:bg-primary/90 transition font-inter font-medium">
+            <PanelLeftCloseIcon className="w-5 h-5" />
+            Home
+          </button>
+        </Link>
+        <h1 className="text-primary text-2xl font-bold -z-50">Kaduk Restaurant Mukkam</h1>
+      </div>
       <div className="text-center mb-10">
-        <Image src={"/kaduk.png"} alt="Kaduk Restaurant Logo" width={200} height={100} className="mx-auto mb-4" />
-
+        <Image
+          src={"/kaduk1.png"}
+          alt="Kaduk Restaurant Logo"
+          width={200}
+          height={100}
+          className="mx-auto mb-4"
+        />
         <p className="text-lg text-gray-600 font-medium">
-          Authentic Flavors | Y Bridge Thiruvambady Road Kumaranallur, Mukkam - Kozhikkode
+          Authentic Flavors | Y Bridge Thiruvambady Road Kumaranallur, Mukkam -
+          Kozhikkode
         </p>
       </div>
 
@@ -152,7 +169,9 @@ const Menu = () => {
       {/* Footer */}
       <footer className="mt-16 text-center text-gray-600">
         <p className="text-lg font-semibold">📞 6282 222 017, 9567 921 403</p>
-        <p className="text-sm">📍 Y Bridge Thiruvambady Road Kumaranallur Mukkam - Kozhikode</p>
+        <p className="text-sm">
+          📍 Y Bridge Thiruvambady Road Kumaranallur Mukkam - Kozhikode
+        </p>
       </footer>
     </div>
   );

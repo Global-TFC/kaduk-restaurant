@@ -57,7 +57,7 @@ const Contact = () => {
         </div>
         {/* CTA Section */}
         <div className="max-w-4xl mx-auto">
-          <Card className="bg-gradient-hero text-primary shadow-glow">
+          <Card className="bg-white text-primary shadow-glow">
             <CardContent className="p-8 md:p-12 text-center space-y-6">
               <h3 className="text-3xl md:text-4xl font-playfair font-bold">
                 Ready to Experience Kaduk?
@@ -69,8 +69,8 @@ const Contact = () => {
               <div className="flex justify-center pt-4">
                 <Button 
                   size="lg" 
-                  variant={"outline"}
-                  className="bg-white text-primary cursor-pointer font-medium px-8 py-3 text-lg"
+                  variant={"primary"}
+                  className="bg-primary text-primary-foreground cursor-pointer font-medium px-8 py-3 text-lg"
                 >
                   Make Reservation
                 </Button>

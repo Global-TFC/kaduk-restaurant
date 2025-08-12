@@ -54,7 +54,7 @@ const About = () => {
             </div>
             {/* Floating card */}
             <Card className="absolute -bottom-6 -left-6 bg-accent text-accent-foreground shadow-glow">
-              <CardContent className="p-6 text-center">
+              <CardContent className="p-6 text-center text-primary">
                 <div className="text-2xl font-bold">Family</div>
                 <div className="text-sm font-inter">Restaurant</div>
               </CardContent>
