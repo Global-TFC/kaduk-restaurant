@@ -5,19 +5,19 @@ import Link from "next/link";
 const MenuHighlights = () => {
   const specialties = [
     {
-      title: "Thalassery Chicken Biryani",
-      description: "Thalassery Chicken Biryani is a traditional North Kerala biryani made with rice, tender chicken, and mild aromatic spices.",
-      highlight: "Heritage Flavors"
+      title: "Kappa + Beef",
+      description: "A classic Kerala combination of fluffy tapioca (kappa) served with a rich and spicy beef curry.",
+      highlight: "Authentic Kerala Combo"
     },
     {
-      title: "Kozhikoden Beef Biryani",
-      description: "A spicy and flavorful Malabar biryani made with tender beef, rice, and traditional Kerala spices.",
-      highlight: "Malabar Tastes"
+      title: "Kappa Fish Mulakittath",
+      description: "Soft-cooked tapioca paired with a fiery red fish curry, a staple dish from the heart of Kerala.",
+      highlight: "Spicy Seafood Delight"
     },
     {
-      title: "Beef Usmani",
-      description: "Every dish is prepared with the finest ingredients and attention to detail for exceptional taste.",
-      highlight: "Premium Quality"
+      title: "Erachi Puttu",
+      description: "Steamed rice cakes layered with a savory filling of spiced minced meat (beef, chicken, or shrimp).",
+      highlight: "A Savory Twist"
     }
   ];
 
