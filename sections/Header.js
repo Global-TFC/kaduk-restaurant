@@ -95,7 +95,7 @@ const Header = () => {
                 About
               </a>
               <a
-                href="#menu"
+                href="/menu"
                 className="text-black hover:text-primary-foreground transition-colors animate-fade-in"
                 onClick={() => setIsMenuOpen(false)}
               >
