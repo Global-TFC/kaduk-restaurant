@@ -2,8 +2,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { PanelLeftCloseIcon } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const Menu = () => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
   const menuSections = [
     { id: "kaduk-special", title: "Kaduk Special" },
     { id: "arabic-dish", title: "Arabic Dish" },
@@ -20,90 +26,94 @@ const Menu = () => {
   const hiddenOnMobile = ["fish", "bread", "rice", "juice", "tea-coffee"];
 
   const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (typeof window !== "undefined") {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
     }
   };
   const kadukspecial = [
     { name: "Kappa + Beef", prices: [150] },
-    { name: "Kappa fish mulakittath", prices: [100] },
-    { name: "Erachi puttu (beef, chicken, chemmeen)", prices: [140] },
-    { name: "Key porotta (chicken, beef)", prices: [150] },
-    { name: "Nool porotta", prices: [170] },
-    { name: "Beef pollichath", prices: [250] },
-    { name: "Kaada fry", prices: [180] },
-    { name: "Kunji key fry", prices: [190] },
-    { name: "Fish pollichath", prices: [190] },
-    { name: "Thengha chor", prices: [120] },
+    { name: "Kappa Fish Mulakittath", prices: [120] },
+    { name: "Erachi Puttu (Beef, Chicken, Chemmeen)", prices: [120, 130] },
+    { name: "Key Porotta (Chicken, Beef)", prices: [150] },
+    { name: "Nool Porotta", prices: [15] },
+    { name: "Paal Porotta", prices: [150] },
+    { name: "Kabliy Rice", prices: [70] },
+    { name: "Beef Payam Pori", prices: [140] },
+    { name: "Kaada Fry", prices: [110] },
+    { name: "Tharav Roast", prices: [170] },
+    { name: "Kunji Key Fry", prices: [190] },
+    { name: "Fish Pollichath", prices: ["Seasonal"] },
+    { name: "Thengha Chor Beef", prices: [150] },
+    { name: "Kaduk Mandi Platter", prices: [499] },
+    { name: "(Alfham, Beef, Tikka, Fish)", prices: [null] },
   ];
 
   const arabicDish = [
-    { name: "Alfam with kabili", prices: [100, 180, 350, 700] },
-    { name: "Pollichath with kabili", prices: [100, 180, 350, 700] },
-    { name: "Kanthari with kabili", prices: [100, 180, 350, 700] },
-    { name: "Alfam with mandi", prices: [100, 180, 350, 700] },
-    { name: "Pollichath with mandi", prices: [100, 180, 350, 700] },
-    { name: "Kanthari with mandi", prices: [100, 180, 350, 700] },
-    { name: "Alfam pollichath", prices: [100, 180, 350, 700] },
-    { name: "Kanthari", prices: [100, 180, 350, 700] },
-    { name: "Pollichath", prices: [100, 180, 350, 700] },
-    { name: "Peri Peri", prices: [100, 150, 170, 200] },
-    { name: "Honey Alfam", prices: [100, 180, 350, 700] },
-    { name: "Chicken Tikka", prices: [150, 200, 250, 400] },
-    { name: "Fried chicken", prices: [100, 180, 350, 700] },
-    { name: "Fried chicken spicy", prices: [150, 200, 380, 750] },
+    { name: "Alfam", prices: [80, 130, 260, 500] },
+    { name: "Kanthari", prices: [80, 130, 260, 500] },
+    { name: "Pollichath", prices: [80, 130, 260, 500] },
+    { name: "Peri Peri", prices: [80, 130, 260, 500] },
+    { name: "Honey Alfam", prices: [80, 130, 260, 500] },
+    { name: "Fried Chicken", prices: [null, 110, 200, 450] },
+    { name: "Fried Chicken Spicy", prices: [null, 120, 240, 480] },
+    { name: "Alfam with Kabili", prices: [null, 180, 350, 700] },
+    { name: "Pollichath with Kabili", prices: [null, 180, 350, 700] },
+    { name: "Kanthari with Kabili", prices: [null, 180, 350, 700] },
+    { name: "Alfam with Mandi", prices: [null, 180, 350, 700] },
+    { name: "Pollichath with Mandi", prices: [null, 180, 350, 700] },
+    { name: "Kanthari with Mandi", prices: [null, 180, 350, 700] },
+    { name: "Chicken Tikka", prices: [null, null, null, 150] },
   ];
 
   const beefItems = [
-    { name: "Beef pallikari", price: 120 },
-    { name: "Beef kondattam", price: 130 },
-    { name: "Beef ularth", price: 120 },
-    { name: "Beef chilly", price: 120 },
-    { name: "Beef roast", price: 150 },
-    { name: "Beef liver fry", price: 130 },
-    { name: "Beef boti fry", price: 100 },
-    { name: "Beef pollichath", price: 130 },
-    { name: "Beef fry", price: 100 },
+    { name: "Beef Pallikari", price: 120 },
+    { name: "Beef Kondattam", price: 130 },
+    { name: "Beef Ularth", price: 120 },
+    { name: "Beef Chilly", price: 140 },
+    { name: "Beef Roast", price: 150 },
+    { name: "Beef Liver fry", price: 130 },
+    { name: "Beef Boti fry", price: 100 },
+    { name: "Beef Pollichath", price: 150 },
+    { name: "Beef Fry", price: 90 },
   ];
   const chickenItems = [
-    { name: "Chicken kondattam", prices: [130, 250, 500] },
-    { name: "Chicken leg piece", prices: [90, "-", "-"] },
+    { name: "Chicken Kondattam", prices: [130, 260, 500] },
     { name: "Chicken 65", prices: [120, 240, 480] },
-    { name: "Kunji koyi", prices: ["-", 130, 240] },
-    { name: "Butter chicken", prices: [150, 300, 550] },
-    { name: "Pepper chicken", prices: [150, 300, 550] },
-    { name: "Chicken curry", prices: [100, "-", "-"] },
-    { name: "Alfam", prices: [120, 130, 240, 480] },
-    { name: "Pollichath chicken", prices: [90, 130, 260, 500] },
-    { name: "Kanthari chicken", prices: [90, 130, 260, 500] },
-    { name: "Peri peri chicken", prices: [90, 130, 260, 500] },
+    { name: "Butter Chicken", prices: [160, 250, 500] },
+    { name: "Pepper Chicken", prices: [150, 250, 500] },
+    { name: "Kunji Koyi", prices: [null, 130, 240] },
+    { name: "Chicken Leg Piece", prices: [null, null, 90] },
+    { name: "Chicken Curry", prices: [null, null, 100] },
+    { name: "Chicken Kadayi", prices: [null, null, 130] },
   ];
   const biryaniItems = [
-    { name: "Thalassery chicken biryani", prices: [80, 140, 400, 750] },
-    { name: "Malabari beef biryani", prices: [90, 150, 450, 800] },
-    { name: "Hydrabadi chicken biryani", prices: [100, 150, 400, 800] },
-    { name: "Alappy chemmin biryani", prices: [140, 190, "-", "-"] },
-    { name: "Kallumakay biriyani", prices: ["-", 190, "-", "-"] },
-    { name: "Wayanadan kappa biriyani", prices: ["-", 180, "-", "-"] },
-    { name: "Fish biryani", prices: ["-", 200, "-", "-"] },
+    { name: "Thalassery Chicken Biryani", prices: [80, 130, 350, 750] },
+    { name: "Malabari Beef Biryani", prices: [90, 140, 400, 800] },
+    { name: "Hydrabadi Chicken Biryani", prices: [null, 150, 400, 800] },
+    { name: "Alappy Chemmeen Biryani", prices: [null, 190, null, null] },
+    { name: "Wayanadan Kappa Biryani", prices: [null, 180, null, null] },
+    { name: "Kallumakay Biryani", prices: [null, 190, null, null] },
+    { name: "Fish Biryani", prices: ["Seasonal", null, null, null] },
   ];
 
   const fishItems = [
-    { name: "Chammeen Rost", price: 150 },
-    { name: "Grilled Chammeen", price: 150 },
-    { name: "Koonthal fry", price: 150 },
-    { name: "Kadkka Roast", price: 150 },
-    { name: "Crab Masala", price: 140 },
-    { name: "Crab Roast", price: 140 },
-    { name: "Koonthel Roast", price: 170 },
-    { name: "Fish Pollichath", price: 170 },
-    { name: "Fish Thawa Fry", price: 160 },
-    { name: "Kallumakkaya Varattiyath", price: 150 },
-    { name: "Kallumakkaya Fry", price: 140 },
-    { name: "Kakka Fry", price: 130 },
-    { name: "Kakka Roast", price: 140 },
-    { name: "Fish Curry", price: 120 },
+    { name: "Chemmeen Roast", price: "Seasonal" },
+    { name: "Grilled Chemmeen", price: "Seasonal" },
+    { name: "Koonthal Fry", price: "Seasonal" },
+    { name: "Kadkka Roast", price: "Seasonal" },
+    { name: "Crab Masala", price: "Seasonal" },
+    { name: "Crab Roast", price: "Seasonal" },
+    { name: "Koonthal Roast", price: "Seasonal" },
+    { name: "Fish Pollichath", price: "Seasonal" },
+    { name: "Fish Thawa Fry", price: "Seasonal" },
+    { name: "Kallumakkaya Varattiyath", price: "Seasonal" },
+    { name: "Kallumakkaya Fry", price: "Seasonal" },
+    { name: "Kakka Fry", price: "Seasonal" },
+    { name: "Kakka Roast", price: "Seasonal" },
+    { name: "Fish Curry", price: "Seasonal" },
   ];
 
   const breadItems = [
@@ -120,10 +130,8 @@ const Menu = () => {
   ];
 
   const riceItems = [
-    { name: "Biriyani Rice", prices: [70, 180, 350] },
-    { name: "Ghee Rice", prices: [70, 180, 350] },
-    { name: "Mandi Rice", prices: [70, 180, 350] },
-    { name: "Kabuli Rice", prices: [70, 180, 350] },
+    { name: "Biriyani Rice", prices: [70, 160, 380] },
+    { name: "Ghee Rice, Mandi Rice", prices: [150, 200, 300, 500] },
   ];
 
   const juiceItems = [
@@ -183,7 +191,7 @@ const Menu = () => {
                   ? "bg-primary text-white hover:bg-white hover:text-primary"
                   : "bg-white text-gray-800 hover:bg-primary hover:text-white"
               } ${
-                hiddenOnMobile.includes(section.id)
+                hiddenOnMobile.includes(section.id) && isMounted
                   ? "hidden md:inline-block"
                   : ""
               }`}
@@ -232,16 +240,16 @@ const Menu = () => {
               >
                 <span className="col-span-1">{item.name}</span>
                 <span className="text-center font-semibold">
-                  {item.prices[0]}
+                  {item.prices[0] || "-"}
                 </span>
                 <span className="text-center font-semibold">
-                  {item.prices[1]}
+                  {item.prices[1] || "-"}
                 </span>
                 <span className="text-center font-semibold">
-                  {item.prices[2]}
+                  {item.prices[2] || "-"}
                 </span>
                 <span className="text-center font-semibold">
-                  {item.prices[3]}
+                  {item.prices[3] || "-"}
                 </span>
               </div>
             ))}
@@ -265,16 +273,16 @@ const Menu = () => {
               >
                 <span className="col-span-2">{item.name}</span>
                 <span className="text-center font-semibold">
-                  {item.prices[0]}
+                  {item.prices[0] || "-"}
                 </span>
                 <span className="text-center font-semibold">
-                  {item.prices[1]}
+                  {item.prices[1] || "-"}
                 </span>
                 <span className="text-center font-semibold">
-                  {item.prices[2]}
+                  {item.prices[2] || "-"}
                 </span>
                 <span className="text-center font-semibold">
-                  {item.prices[3]}
+                  {item.prices[3] || "-"}
                 </span>
               </div>
             ))}
@@ -301,31 +309,35 @@ const Menu = () => {
             <h2 className="text-2xl font-bold border-b-4 border-yellow-500 pb-2 mb-4 text-yellow-700">
               🍗 വിശ്വവിഖ്യാത കോഴി
             </h2>
-            <div className="grid grid-cols-5 font-medium mb-2">
+            <div className="grid grid-cols-4 font-medium mb-2">
               <span className="opacity-0">Item</span>
-              <span className="text-center">Q-H</span>
               <span className="text-center">Q</span>
               <span className="text-center">H</span>
               <span className="text-center">F</span>
             </div>
             {chickenItems.map((item, idx) => (
-              <div
-                key={idx}
-                className="grid grid-cols-5 py-1 border-b border-gray-200"
-              >
-                <span>{item.name}</span>
-                <span className="text-center font-semibold">
-                  {item.prices[0]}
-                </span>
-                <span className="text-center font-semibold">
-                  {item.prices[1]}
-                </span>
-                <span className="text-center font-semibold">
-                  {item.prices[2]}
-                </span>
-                <span className="text-center font-semibold">
-                  {item.prices[3]}
-                </span>
+              <div key={idx}>
+                {item.prices.length === 3 ? (
+                  <div className="grid grid-cols-4 py-1 border-b border-gray-200">
+                    <span>{item.name}</span>
+                    <span className="text-center font-semibold">
+                      {item.prices[0] || "-"}
+                    </span>
+                    <span className="text-center font-semibold">
+                      {item.prices[1] || "-"}
+                    </span>
+                    <span className="text-center font-semibold">
+                      {item.prices[2] || "-"}
+                    </span>
+                  </div>
+                ) : (
+                  <div className="flex justify-between py-1 border-b border-gray-200">
+                    <span>{item.name}</span>
+                    <span className="font-semibold">
+                      {item.prices[0] || "-"}
+                    </span>
+                  </div>
+                )}
               </div>
             ))}
           </div>
@@ -333,7 +345,7 @@ const Menu = () => {
           {/* Fish */}
           <div id="fish">
             <h2 className="text-2xl font-bold border-b-4 border-blue-500 pb-2 mb-4 text-blue-700">
-              🐟  വലയിൽ കുടുങ്ങാത്ത മീനുകൾ
+              🐟 വലയിൽ കുടുങ്ങാത്ത മീനുകൾ
             </h2>
             {fishItems.map((item, idx) => (
               <div
@@ -364,26 +376,30 @@ const Menu = () => {
           {/* Rice */}
           <div id="rice">
             <h2 className="text-2xl font-bold border-b-4 border-green-500 pb-2 mb-4 text-green-700">
-              🍚  അരി 
+              🍚 അരി
             </h2>
-            <div className="grid grid-cols-4 font-medium mb-2">
+            <div className="grid grid-cols-5 font-medium mb-2">
               <span className="opacity-0">Item</span>
+              <span className="text-center">Q-H</span>
               <span className="text-center">Q</span>
               <span className="text-center">H</span>
               <span className="text-center">F</span>
             </div>
             {riceItems.map((item, idx) => (
               <div key={idx}>
-                <div className="grid grid-cols-4 py-1 border-b border-gray-200">
+                <div className="grid grid-cols-5 py-1 border-b border-gray-200">
                   <span>{item.name}</span>
                   <span className="text-center font-semibold">
-                    {item.prices[0]}
+                    {item.prices[0] || "-"}
                   </span>
                   <span className="text-center font-semibold">
-                    {item.prices[1]}
+                    {item.prices[1] || "-"}
                   </span>
                   <span className="text-center font-semibold">
-                    {item.prices[2]}
+                    {item.prices[2] || "-"}
+                  </span>
+                  <span className="text-center font-semibold">
+                    {item.prices[3] || "-"}
                   </span>
                 </div>
               </div>
@@ -409,7 +425,7 @@ const Menu = () => {
           {/* Tea and Coffee */}
           <div id="tea-coffee">
             <h2 className="text-2xl font-bold border-b-4 border-amber-500 pb-2 mb-4 text-amber-700">
-              ☕ ചൂടുള്ളത് 
+              ☕ ചൂടുള്ളത്
             </h2>
             {teaAndCoffeeItems.map((item, idx) => (
               <div
