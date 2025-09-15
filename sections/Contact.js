@@ -12,7 +12,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Call Us",
-      details: ["+91 123 456 7890", "+91 098 765 4321"]
+      details: ["+91 7356010105", "+91 6235789450"]
     },
     {
       icon: Clock,

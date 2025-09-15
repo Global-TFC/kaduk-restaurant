@@ -95,7 +95,8 @@ const Footer = () => {
             </h4>
             <div className="space-y-2 text-sm font-inter">
               <p>Y Bridge Thiruvambady Road Kumaranallur, Mukkam, Kozhikode </p>
-              <p>Phone: +91 123 456 7890</p>
+              <p>Phone: +91 7356010105</p>
+              <p>Phone: +91 6235789450</p>
               <p>Email: kadukrestaurantmukkam@gmail.com</p>
               <p>Hours: 9 AM - 11 PM Daily</p>
             </div>
