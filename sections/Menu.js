@@ -454,7 +454,7 @@ const Menu = () => {
 
       {/* Footer */}
       <footer className="mt-16 text-center text-gray-600">
-        <p className="text-lg font-semibold">📞 6282 222 017, 9567 921 403</p>
+        <p className="text-lg font-semibold">📞 7356010105, 6235789450</p>
         <p className="text-sm">
           📍 Y Bridge Thiruvambady Road Kumaranallur Mukkam - Kozhikode
         </p>

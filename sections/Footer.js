@@ -46,7 +46,7 @@ const Footer = () => {
                 <FaFacebook className="w-6 h-6 text-gold hover:text-cream transition-colors" />
               </a>
               <a
-                href="https://wa.me/911234567890"
+                href="https://wa.me/7356010105"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
